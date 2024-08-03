@@ -16,7 +16,7 @@ function TodoList() {
     const fetchTodos = async () => {
         try {
 
-            const response = await fetch('https://todo-backend-rvtc.onrender.com/api/todos', {
+            const response = await fetch('https://todo-app-backend-2tow.onrender.com/api/todos', {
                 headers: {
                     'x-access-token': token
                 }
@@ -42,7 +42,7 @@ function TodoList() {
     const handleAdd = async (description) => {
         try {
 
-            const response = await fetch('https://todo-backend-rvtc.onrender.com/api/todos', {
+            const response = await fetch('https://todo-app-backend-2tow.onrender.com/api/todos', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ function TodoList() {
     const handleUpdate = async (id, updatedTodo) => {
         try {
 
-            const response = await fetch(`https://todo-backend-rvtc.onrender.com/api/todos/${id}`, {
+            const response = await fetch(`https://todo-app-backend-2tow.onrender.com/api/todos/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -92,7 +92,7 @@ function TodoList() {
     const handleDelete = async (id) => {
         try {
 
-            const response = await fetch(`https://todo-backend-rvtc.onrender.com/api/todos/${id}`, {
+            const response = await fetch(`https://todo-app-backend-2tow.onrender.com/api/todos/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'x-access-token': token

@@ -18,7 +18,7 @@ function Register() {
         }
 
         try {
-            const response = await fetch('https://todo-backend-rvtc.onrender.com/api/register', {
+            const response = await fetch('https://todo-app-backend-2tow.onrender.com/api/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

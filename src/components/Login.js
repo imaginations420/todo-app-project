@@ -37,7 +37,7 @@ const Login = () => {
         }
 
         const userDetails = { username: username, password: password };
-        const url = 'https://todo-backend-rvtc.onrender.com/api/login';
+        const url = 'https://todo-app-backend-2tow.onrender.com/api/login';
         const options = {
             method: 'POST',
             headers: {
@@ -52,7 +52,7 @@ const Login = () => {
             if (response.ok) {
                 onSubmitSuccess(data.token); // Adjusted based on your provided response
             } else {
-                onSubmitFailure(data.error_msg);
+                onSubmitFailure('Something went wrong. Please try again.');
             }
         } catch (error) {
             console.error('Error:', error);
